@@ -1,0 +1,46 @@
+#!/bin/bash
+# Skillfile — portable agent skills setup
+# Run: bash Skillfile
+#
+# Installs all agent skills globally. Each source updates
+# independently via `npx skills update`.
+
+set -e
+
+echo "Installing agent skills..."
+
+# Impeccable design pack (17 skills)
+# adapt, animate, audit, bolder, clarify, colorize, critique, delight,
+# distill, extract, harden, normalize, onboard, optimize, polish, quieter,
+# teach-impeccable
+npx skills add pbakaus/impeccable --all -g -y
+
+# Vercel (4 skills)
+# vercel-composition-patterns, vercel-react-best-practices,
+# web-design-guidelines, vercel-deploy
+npx skills add vercel-labs/agent-skills --all -g -y
+
+# Anthropic (2 skills)
+# frontend-design, skill-creator
+npx skills add anthropics/skills --skill frontend-design --skill skill-creator -g -y
+
+# Taste pack (3 skills)
+# design-taste-frontend, full-output-enforcement, redesign-existing-projects
+npx skills add leonxlnx/taste-skill --all -g -y
+
+# Agent browser
+npx skills add vercel-labs/agent-browser -g -y
+
+# Remotion
+npx skills add remotion-dev/skills -g -y
+
+# SwiftUI
+npx skills add avdlee/swiftui-agent-skill -g -y
+
+# Humanizer
+npx skills add blader/humanizer -g -y
+
+# Custom (barronlroth) — CXAS skills
+npx skills add barronlroth/Skills --all -g -y
+
+echo "Done. $(ls ~/.agents/skills/ | wc -l | tr -d ' ') skills installed."
