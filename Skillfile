@@ -10,37 +10,39 @@ set -e
 echo "Installing agent skills..."
 
 # Impeccable design pack (17 skills)
-# adapt, animate, audit, bolder, clarify, colorize, critique, delight,
-# distill, extract, harden, normalize, onboard, optimize, polish, quieter,
-# teach-impeccable
 npx skills add pbakaus/impeccable --all -g -y
 
-# Vercel (4 skills)
-# vercel-composition-patterns, vercel-react-best-practices,
-# web-design-guidelines, vercel-deploy
+# Vercel agent skills (4 skills)
 npx skills add vercel-labs/agent-skills --all -g -y
 
-# Anthropic (2 skills)
-# frontend-design, skill-creator
+# Vercel agent browser (5 skills)
+npx skills add vercel-labs/agent-browser --all -g -y
+
+# Anthropic (frontend-design, skill-creator)
 npx skills add anthropics/skills --skill frontend-design --skill skill-creator -g -y
 
-# Taste pack (3 skills)
-# design-taste-frontend, full-output-enforcement, redesign-existing-projects
+# Taste skill pack (7 skills)
 npx skills add leonxlnx/taste-skill --all -g -y
 
-# Agent browser
-npx skills add vercel-labs/agent-browser -g -y
+# App Store Connect CLI skills (21 skills)
+npx skills add rudrankriyam/app-store-connect-cli-skills --all -g -y
 
-# Remotion
-npx skills add remotion-dev/skills -g -y
+# dimillian iOS/SwiftUI/macOS pack (14 skills)
+npx skills add dimillian/skills --all -g -y
 
-# SwiftUI
-npx skills add avdlee/swiftui-agent-skill -g -y
+# SwiftUI expert + update APIs (2 skills)
+npx skills add avdlee/swiftui-agent-skill --all -g -y
 
-# Humanizer
+# Swift concurrency (1 skill)
+npx skills add avdlee/swift-concurrency-agent-skill -g -y
+
+# Humanizer (1 skill)
 npx skills add blader/humanizer -g -y
 
-# Custom (barronlroth) — CXAS skills
+# Remotion (1 skill)
+npx skills add remotion-dev/skills -g -y
+
+# Custom — CXAS (4 skills)
 npx skills add barronlroth/Skills --all -g -y
 
-echo "Done. $(ls ~/.agents/skills/ | wc -l | tr -d ' ') skills installed."
+echo "Done. Run 'npx skills check' to verify."
