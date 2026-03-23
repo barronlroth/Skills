@@ -4,6 +4,9 @@
 #
 # Installs all agent skills globally. Each source updates
 # independently via `npx skills update`.
+#
+# NOTE: iOS/Swift/ASC skills are NOT here — they live in
+# project repos (e.g. Cubby) where they belong.
 
 set -e
 
@@ -23,18 +26,6 @@ npx skills add anthropics/skills --skill frontend-design --skill skill-creator -
 
 # Taste skill pack (7 skills)
 npx skills add leonxlnx/taste-skill --all -g -y
-
-# App Store Connect CLI skills (21 skills)
-npx skills add rudrankriyam/app-store-connect-cli-skills --all -g -y
-
-# dimillian iOS/SwiftUI/macOS pack (14 skills)
-npx skills add dimillian/skills --all -g -y
-
-# SwiftUI expert + update APIs (2 skills)
-npx skills add avdlee/swiftui-agent-skill --all -g -y
-
-# Swift concurrency (1 skill)
-npx skills add avdlee/swift-concurrency-agent-skill -g -y
 
 # Humanizer (1 skill)
 npx skills add blader/humanizer -g -y
