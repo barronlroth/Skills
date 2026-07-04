@@ -14,6 +14,7 @@ This installs all skills globally from their original source repos, plus the cus
 
 - **`Skillfile`** — declarative script that installs all skills from source repos
 - **`cxas-*`** — Custom CX Agent Studio skills (Google Cloud)
+- **`eli-pm`** — concise engineer-to-PM explanation frame
 
 ## Updating
 
