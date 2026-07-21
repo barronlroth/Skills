@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Engineering says our checkout endpoint is not idempotent and therefore automatic retries could be dangerous. I understand the words individually, but explain what that means for the product and customer experience.",
+    "should_trigger": true
+  },
+  {
+    "query": "I keep hearing that the KV cache is why long context windows get expensive. Can you give me the working mental model and the implications I should care about?",
+    "should_trigger": true
+  },
+  {
+    "query": "The data scientist says the experiment is underpowered even though it shows a 12 percent lift. What should I understand before making the launch call?",
+    "should_trigger": true
+  },
+  {
+    "query": "Our AI lead suggested fine-tuning instead of RAG for the support assistant. Explain the distinction at a PM level and what actually drives that decision.",
+    "should_trigger": true
+  },
+  {
+    "query": "The architecture review kept talking about p95 and p99 latency, but the explanation got too technical. Translate why those numbers matter to users and our SLA.",
+    "should_trigger": true
+  },
+  {
+    "query": "What does it really mean when a model is described as 7B or 70B parameters? I need enough understanding to discuss quality, cost, and latency with engineering.",
+    "should_trigger": true
+  },
+  {
+    "query": "eli-pm: why does switching from polling to an event-driven system change reliability and operational complexity?",
+    "should_trigger": true
+  },
+  {
+    "query": "The team wants to introduce Kafka into our notification pipeline. I don't need the implementation; what is it doing and when is that complexity justified?",
+    "should_trigger": true
+  },
+  {
+    "query": "This explanation of database indexes is way too technical. Reframe it for someone responsible for product performance and roadmap tradeoffs.",
+    "should_trigger": true
+  },
+  {
+    "query": "We're planning a zero-downtime data migration. What should a PM understand about the hidden risk, sequencing, and reversibility?",
+    "should_trigger": true
+  },
+  {
+    "query": "Implement idempotency-key support in the checkout API, including the database schema, middleware, tests, and error handling.",
+    "should_trigger": false
+  },
+  {
+    "query": "Debug the failing retry tests in payments/retry_test.py and patch the race condition. Run the test suite when you're done.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write a detailed engineering RFC for migrating our notification service from Redis queues to Kafka, including schemas, partitioning, consumer groups, and rollout commands.",
+    "should_trigger": false
+  },
+  {
+    "query": "Derive the transformer attention equations and show how the time and space complexity changes with sequence length and grouped-query attention.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain neural networks literally like I'm five, using a story about a classroom of tiny robots and avoiding all technical vocabulary.",
+    "should_trigger": false
+  },
+  {
+    "query": "Turn this product brief into a six-month roadmap with milestones, owners, dependencies, and quarterly OKRs.",
+    "should_trigger": false
+  },
+  {
+    "query": "Copyedit this launch announcement for clarity and concision while preserving our brand voice and all factual claims.",
+    "should_trigger": false
+  },
+  {
+    "query": "Perform a security review of the OAuth callback implementation and report exploitable vulnerabilities with file and line references.",
+    "should_trigger": false
+  },
+  {
+    "query": "Teach me transformers over several lessons with exercises, retrieval practice, and a running glossary. I want enough depth to implement one from scratch.",
+    "should_trigger": false
+  },
+  {
+    "query": "Analyze our Q2 funnel spreadsheet, calculate conversion by acquisition channel, and build charts showing the biggest drop-offs.",
+    "should_trigger": false
+  }
+]

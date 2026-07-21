@@ -1,0 +1,41 @@
+{
+  "skill_name": "eli-pm",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "eli-pm: Our backend engineer says retries are dangerous because the checkout endpoint is not idempotent. What does that mean?",
+      "expected_output": "A concise adult explanation of idempotency and retries that provides the causal mechanism, connects duplicate execution to customer and business consequences, and corrects the misconception that a retry merely repeats a harmless request.",
+      "assertions": [
+        "Opens with a direct plain-language answer before background.",
+        "Correctly explains that an idempotent operation can be repeated with the same intended net effect and that retrying a non-idempotent checkout can repeat a side effect.",
+        "Connects the mechanism to a concrete product consequence such as duplicate charges, orders, or inventory changes.",
+        "Uses no more than 350 words and avoids childish framing."
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "eli-pm: The data scientist says our experiment is underpowered and that the observed 12% lift is not statistically significant. I know those words but I don't understand what they mean for the launch.",
+      "expected_output": "A concise explanation that distinguishes observed lift from evidence strength, explains power and statistical significance without a statistics lecture, and connects uncertainty to the launch decision without pretending to choose for the user.",
+      "assertions": [
+        "Opens by distinguishing the observed 12% lift from confidence that the treatment caused it.",
+        "Correctly explains that an underpowered experiment has too little information to reliably detect an effect of interest.",
+        "Translates the statistical uncertainty into launch implications without claiming that not significant means no effect.",
+        "Uses no more than 350 words and avoids an unnecessary statistics lecture."
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "eli-pm: We need to choose between RAG and fine-tuning for an AI support feature. Explain the difference and what should drive the decision.",
+      "expected_output": "A decision-oriented explanation that gives a correct mental model for RAG and fine-tuning, corrects the idea that they are interchangeable ways to add knowledge, and surfaces the few product and operational factors that should drive the choice.",
+      "assertions": [
+        "Correctly explains that RAG retrieves information at request time while fine-tuning changes model parameters through additional training.",
+        "Makes clear that RAG and fine-tuning solve different primary problems and may be combined.",
+        "Surfaces decision factors tied to the support product, including knowledge freshness or source grounding and desired behavioral consistency.",
+        "Uses no more than 300 words and focuses on decision-relevant tradeoffs rather than implementation detail."
+      ],
+      "files": []
+    }
+  ]
+}
