@@ -16,6 +16,8 @@ This installs all skills globally from their original source repos, plus the cus
 - **`cxas-*`** — Custom CX Agent Studio skills (Google Cloud)
 - **`eli-pm`** — concise engineer-to-PM explanation frame
 
+- **`gemini-maps-grounding`** — Maps-grounded local recommendations using the Gemini API CLI, with optional Search grounding
+
 ## Updating
 
 ```bash
